@@ -19,7 +19,7 @@ p {
 
 /* Box model */
 h1 {
-    margin-top: 45px;
+    margin-top: 45px 0 45px 0;
     text-align: center;
 }
 
