@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom CSS Styles for Form Inputs and Textareas</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Custom CSS Styles for Form Inputs and Textareas</h1>
+    <label for="text-input">Text Input</label>
+    <input class="input" id="text-input" type="text" />
+
+    <label for="date-input">Date Input</label>
+    <input class="input" id="date-input" type="date" />
+
+    <label for="file-input">File Input</label>
+    <input id="file-input" class="input" type="file" />
+
+    <label for="readonly-input">Read-Only Input</label>
+    <input
+      class="input"
+      id="readonly-input"
+      type="text"
+      readonly
+      value="This can only be copied"
+    />
+
+    <label for="disabled-input">Disabled Input</label>
+    <input class="input" id="disabled-input" type="text" disabled />
+
+    <label for="textarea">Textarea</label>
+    <textarea class="input" id="textarea"></textarea>
+
+    <label for="textarea-disabled">Textarea Disabled</label>
+    <textarea class="input" id="textarea-disabled" disabled></textarea>
+  </body>
+</html>
