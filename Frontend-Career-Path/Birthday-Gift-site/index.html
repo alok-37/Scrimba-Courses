@@ -4,34 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advanced Happy Birthday</title>
+    <title>Tribute to Per</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="header-container">
-      <header>
-        <h1>Today is Nick's birthday 🎉</h1>
-        <img src="./img/Alok.jpeg" alt="Picture of me" />
-        <h3>24 years old</h3>
-        <h4>02.06.2022</h4>
-      </header>
-    </div>
-    <section class="gift-section">
-      <div class="birthday-gift">
-        <div class="gift">
-          <input id="click" type="checkbox" />
-          <label class="click" for="click"></label>
-          <div class="wishes">Happy Birthday!</div>
-          <div class="sparkles">
-            <div class="spark1"></div>
-            <div class="spark2"></div>
-            <div class="spark3"></div>
-            <div class="spark4"></div>
-            <div class="spark5"></div>
-            <div class="spark6"></div>
+    <header>
+      <h1>Tribute to <mark>Per</mark></h1>
+      <img
+        src="./img/per.jpeg"
+        alt="Per Harald Borgen - CEO
+      "
+      />
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <h1 id="headline">Countdown to his birthday</h1>
+          <div id="countdown">
+            <ul>
+              <li><span id="days"></span>days</li>
+              <li><span id="hours"></span>Hours</li>
+              <li><span id="minutes"></span>Minutes</li>
+              <li><span id="seconds"></span>Seconds</li>
+            </ul>
+          </div>
+          <div id="content" class="emoji">
+            <span>🥳</span>
+            <span>🎉</span>
+            <span>🎂</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>

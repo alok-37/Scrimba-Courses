@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=PT+Sans:wght@400;700&family=Roboto:wght@100;300&display=swap');
 
+/* general styling */
+:root {
+    --smaller: .75;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: 'Happy Monkey', cursive;
     font-family: 'Orbitron', sans-serif;
@@ -9,15 +25,6 @@ body {
     font: 16px/1.5 normal normal;
     font-weight: 300;
     color: #efdab9;
-}
-
-.header-container {
-    width: 540px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
 }
 
 img {
@@ -55,249 +62,70 @@ h1, h2, h3, h4, p {
     text-align: center;
 }
 
-.gift-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.birthday-gift {
-    position: relative;
-}
-
-.birthday-gift:before {
-    content: "";
-    position: absolute;
-    width: 170px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.4);
-    top: 90px;
-    left: -10px;
-}
-
-input#click {
-    display: none;
-}
-
-.gift {
-    position: relative;
-    width: 150px;
-    height: 100px;
-    background-color: #e9c46a;
-}
-
-.gift:before {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 100px;
-    background-color: #e76f51;
-    left: 62px;
-}
-
-.gift:after {
-    content: "";
-    position: absolute;
-    box-shadow: inset 0 10px rgba(0, 0, 0, 0.3);
-    width: 150px;
-    height: 100px;
-}
-
-.click {
-    position: absolute;
-    background-color: #e9c46a;
-    width: 170px;
-    height: 40px;
-    top: -40px;
-    left: -10px;
-    transform-origin: bottom left;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.click:before {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 40px;
-    background-color: #e76f51;
-    left: 69px;
-}
-
-.click:after {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 0;
-    border-bottom: 30px solid #e76f51;
-    border-top: 30px solid #e76f51;
-    border-left: 0px solid transparent;
-    border-right: 30px solid transparent;
-    transform: rotate(-90deg);
-    left: 65px;
-    top: -47px;
-}
-
-#click:checked+.click {
-    transform: rotate(-110deg) scaleX(0.85);
-}
-
-.wishes {
-    position: absolute;
-    transition: .5s;
-    color: #333;
-    font-size: 37px;
+/* container */
+.container {
+    color: #efdab9;
+    margin: 0 auto;
     text-align: center;
-    z-index: -1;
-    left: 5px;
 }
 
-#click:checked~.wishes {
-    transform: translateY(-100px);
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
 }
 
-#click:checked~.sparkles {
+li span {
     display: block;
+    font-size: 4.5rem;
 }
 
-
-
-.sparkles {
-    position: absolute;
+.emoji {
     display: none;
-    top: -15px;
-    z-index: -2;
-    left: 40px;
+    padding: 1rem;
 }
 
-.spark1, .spark2, .spark3, .spark4, .spark5, .spark6 {
-    position: absolute;
-    background-color: #fee440;
-    border-radius: 50%;
-    top: -9px;
-    z-index: -1;
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
 }
 
-.spark1 {
-    width: 8px;
-    height: 8px;
-    left: 30px;
-    top: -9px;
-    animation: fire 0.9s ease-in-out infinite, color 0.4s linear infinite;
-}
+/* media queries for the countdown section */
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
 
-.spark1:before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    top: 8px;
-    left: 11px;
-    background-color: #fee440;
-    border-radius: 50%;
-}
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
 
-.spark2 {
-    width: 9px;
-    height: 9px;
-    left: 33px;
-    top: -5px;
-    animation: fire2 0.28s ease-in-out infinite, color 0.4s linear infinite;
-}
-
-.spark2:before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    top: 12px;
-    left: 3px;
-    background-color: #fee440;
-    border-radius: 50%;
-}
-
-.spark3 {
-    width: 8.5px;
-    height: 8.5px;
-    left: 33px;
-    top: -5px;
-    animation: fire3 0.36s ease-in-out infinite, color2 0.4s linear infinite;
-}
-
-.spark3:before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    top: 12px;
-    left: -1px;
-    background-color: #fee440;
-    border-radius: 50%;
-}
-
-.spark4 {
-    width: 7px;
-    height: 7px;
-    left: 27px;
-    top: -5px;
-    animation: fire2 0.24s ease-in-out infinite, color2 0.2s linear infinite;
-}
-
-.spark5 {
-    width: 7px;
-    height: 7px;
-    left: 29px;
-    top: -5px;
-    animation: fire3 0.45s ease-in-out infinite, color 0.2s linear infinite;
-}
-
-.spark6 {
-    width: 6px;
-    height: 6px;
-    left: 29px;
-    top: -5px;
-    animation: fire 0.35s ease-in-out infinite, color2 0.2s linear infinite;
-}
-
-@keyframes fire3 {
-    100% {
-        transform: translateX(20px) translateY(-93px);
-        opacity: 0.3;
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
     }
 }
 
-@keyframes fire2 {
-    100% {
-        transform: translateX(-5px) translateY(-90px);
-        opacity: 0.3;
-    }
+/* Mark Copied this from the Internet */
+mark {
+    color: #efdab9;
+    -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+    animation: 1.5s highlight 1.5s 1 normal forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #f16c12 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
 }
 
-@keyframes fire {
-    100% {
-        transform: translateX(-25px) translateY(-95px);
-        opacity: 0.3;
-    }
-}
-
-@keyframes color {
-    from {
-        background-color: #d00000;
-    }
-
+@-webkit-keyframes highlight {
     to {
-        background-color: #0081a7;
+        background-position: 0 0;
     }
 }
 
-@keyframes color2 {
-    from {
-        background-color: #8cff00;
-    }
-
+@keyframes highlight {
     to {
-        background-color: #1d2d44;
+        background-position: 0 0;
     }
 }
