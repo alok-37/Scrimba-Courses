@@ -185,3 +185,214 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.aileron-light-white-30px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-aileron-bold);
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dosis-normal-white-28px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-dosis);
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aileron-bold-white-24px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-aileron-bold);
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dosis-normal-supernova-9-5px {
+    color: var(--supernova);
+    font-family: var(--font-family-dosis);
+    font-size: 9.5px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dosis-semi-bold-licorice-24px {
+    color: var(--licorice);
+    font-family: var(--font-family-dosis);
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.ptserif-bold-white-54px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-pt_serif);
+    font-size: 54px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.aileron-bold-alabaster-30px {
+    color: var(--alabaster);
+    font-family: var(--font-family-aileron-bold);
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dosis-normal-supernova-14px {
+    color: var(--supernova);
+    font-family: var(--font-family-dosis);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aileron-regular-normal-mountain-mist-17px {
+    color: var(--mountain-mist-2);
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dosis-normal-white-21-7px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-dosis);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.body-18-yellow {
+    font-family: var(--font-family-dosis);
+    font-size: var(--font-size-xxxs2);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.dosis-normal-supernova-13-5px {
+    color: var(--supernova);
+    font-family: var(--font-family-dosis);
+    font-size: 13.5px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ptserif-bold-white-68px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-pt_serif);
+    font-size: 68px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dosis-normal-licorice-14-5px {
+    color: var(--l1fpjr);
+    font-family: var(--font-family-dosis);
+    font-size: 14.5px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ptserif-bold-coconut-48px {
+    color: var(--coconut);
+    font-family: var(--font-family-pt_serif);
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dosis-normal-licorice-14px {
+    color: var(--licorice);
+    font-family: var(--font-family-dosis);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dosis-normal-licorice-19px {
+    color: var(--l1fpjr);
+    font-family: var(--font-family-dosis);
+    font-size: 19.03px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ptserif-bold-coconut-13-5px {
+    color: var(--coconut);
+    font-family: var(--font-family-pt_serif);
+    font-size: 13.5px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ptserif-bold-coconut-25px {
+    color: var(--coconut);
+    font-family: var(--font-family-pt_serif);
+    font-size: var(--font-size-s);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ptserif-bold-white-32px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-pt_serif);
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dosis-normal-white-14px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-dosis);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.body-18-white {
+    font-family: var(--font-family-dosis);
+    font-size: var(--font-size-xxxs2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ptserif-bold-white-45px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-pt_serif);
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dosis-normal-supernova-12px {
+    color: var(--supernova);
+    font-family: var(--font-family-dosis);
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ptserif-bold-coconut-26px {
+    color: var(--font-family-pt_serif);
+    color: var(--coconut);
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ptserif-bold-white-80px {
+    color: var(--cnn1f1);
+    font-family: var(--font-family-pt_serif);
+    font-size: 80px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.border-0-5px-mountain-mist {
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: var(--mountain-mist);
+}

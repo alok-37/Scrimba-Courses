@@ -1,0 +1,16 @@
+/* Importing */
+@import url("styleguide.css");
+
+.navbar {
+    align-items: center;
+    display: flex;
+    height: 70px;
+    left: 140px;
+    min-width: 1640px;
+    position: absolute;
+    top: 27px;
+}
+
+.button {
+    align-items: flex-end;
+}
