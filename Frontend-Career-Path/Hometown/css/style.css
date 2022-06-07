@@ -1,16 +1,39 @@
-/* Importing */
-@import url("styleguide.css");
-
-.navbar {
-    align-items: center;
+body {
+    font-family: aileron,sans-serif;
+}
+/* header */
+header {
     display: flex;
-    height: 70px;
-    left: 140px;
-    min-width: 1640px;
-    position: absolute;
-    top: 27px;
+    padding: 30px;
+    background-image: url("https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3Vuc2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60")
+    ;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+.logo {
+    margin-right: 30px;
+}
+nav {
+    flex: 1;
 }
 
-.button {
-    align-items: flex-end;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: ;
+}
+a {
+    display: inline-block;
+}
+/* header ends here */
