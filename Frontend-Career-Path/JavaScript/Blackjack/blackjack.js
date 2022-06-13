@@ -1,20 +1,47 @@
-let firstCard = 10
-let secondCard = 11
-let sum = firstCard + secondCard + 4
-let hasBlackJack = false
-let isAlive = true
-// 1. Declare a variable called message and assign its value to an empty string
-let message = " "
-// 2. Reassign the message variable to the string we're logging out
-if (sum <= 20) {
-    message = "Do you want to draw a new card?"
-} else if (sum === 21) {
-    message= "Wohoo! You've got Blackjack! 🥳"
-    hasBlackJack = true
-} else {
-    message = "You're out of the game! 😭"
-    isAlive = false
+let firstCard = 10;
+let secondCard = 4;
+let cards = [firstCard,secondCard];
+let sum = firstCard + secondCard;
+let hasBlackJack = false;
+let isAlive = true;
+let message = "";
+let messageEl = document.getElementById("message-el");
+let sumEl = document.getElementById("sum-el");
+let cardsEl = document.getElementById("cards-el");
+
+// Create a function, getRandomCard(), that always returns the number 5
+function getRandomCard() {
+    return Math.random();
 }
 
-// 3. Log it out!
-console.log(message)
+function startGame() {
+    renderGame();
+}
+
+function renderGame() {
+    cardsEl.textContent = "Cards: ";
+        // Create a for loop that renders out all the cards instead of just two
+    for (cardNumber = 0; cardNumber < cards.length; cardNumber++) {
+        cardsEl.textContent += cards[cardNumber] + " ";
+    }
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
+
+function newCard() {
+    let card = 6
+    sum += card
+    // Push the card to the cards array
+    cards.push(card)
+    console.log(cards)
+    renderGame()
+}

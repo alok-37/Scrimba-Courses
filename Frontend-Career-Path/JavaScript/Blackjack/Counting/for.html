@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting</title>
+</head>
+<body>
+    <p id="greeting-el"></p>
+    <script>
+
+let sentence = ["Hello", "my", "name", "is", "Per"] 
+let greetingEl = document.getElementById("greeting-el")
+
+// Render the sentence in the greetingEl paragraph using a for loop and .textContent
+for (let greeting = 0; greeting < sentence.length; greeting++) {
+    greetingEl.textContent += sentence[greeting] + " ";
+}
+
+
+    </script>
+</body>
+</html>
